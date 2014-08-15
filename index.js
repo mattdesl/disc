@@ -58,6 +58,8 @@ function json(bundles, callback) {
   })
 
   modules = modules.filter(function(module) {
+    if (module.id === 'mWMbv7' || module.id === 'libjs') return false
+    // if (module.id === 'libjs') return false
     return !isEmpty(module)
   })
 
